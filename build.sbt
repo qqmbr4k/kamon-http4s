@@ -14,7 +14,7 @@
  */
 import xerial.sbt.Sonatype._
 
-val kamonVersion = "2.6.1"
+val kamonVersion = "2.8.1"
 val kamonCore = "io.kamon" %% "kamon-core" % kamonVersion
 val kamonTestkit = "io.kamon" %% "kamon-testkit" % kamonVersion
 val kamonCommon = "io.kamon" %% "kamon-instrumentation-common" % kamonVersion
@@ -31,8 +31,8 @@ def http4sDeps(http4sVersion: String, blazeVersion: String) = Seq(
 
 lazy val shared = Seq(
   organization := "io.kamon",
-  scalaVersion := "2.13.8",
-  crossScalaVersions := Seq("2.12.14", "2.13.8"),
+  scalaVersion := "2.13.14",
+  crossScalaVersions := Seq("2.12.14", "2.13.14"),
   moduleName := name.value,
   publishTo := sonatypePublishToBundle.value,
   scalacOptions ++= (CrossVersion.partialVersion(scalaVersion.value) match {
