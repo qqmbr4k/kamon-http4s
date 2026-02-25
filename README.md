@@ -8,18 +8,18 @@
 The `kamon-http4s-<version>` module brings traces and metrics to your [http4s][4] based applications.
 
 It is currently available for Scala 2.12, 2.13, and 3.x, depending on the http4s version. The current
-version supports Kamon 2.6.1 and is published for http4s 0.22, 0.23, and 1.0.
+version supports Kamon 2.8.1 and is published for http4s 0.22, 0.23, and 1.0.
 
 | kamon | kamon-http4s  | status | jdk  | scala | http4s
 |:-----:|:------:|:------:|:----:|--------------:|-------
-| 2.6.x |  2.6.1 | stable | 8+ | 2.12, 2.13 | 0.22.x
-| 2.6.x |  2.6.1 | stable | 8+ | 2.12, 2.13, 3.x | 0.23.x
-| 2.6.x |  2.6.1 | stable | 8+ | 2.13, 3.x | 1.0.M31+
+| 2.6.x |  2.8.1 | stable | 8+ | 2.12, 2.13 | 0.22.x
+| 2.6.x |  2.8.1 | stable | 8+ | 2.12, 2.13, 3.x | 0.23.x
+| 2.6.x |  2.8.1 | stable | 8+ | 2.13, 3.x | 1.0.M31+
 
 To get started with sbt, simply add the following to your `build.sbt` file, for instance for http4s 0.23:
 
 ```scala
-libraryDependencies += "io.kamon" %% "kamon-http4s-0.23" % "2.6.1"
+libraryDependencies += "io.kamon" %% "kamon-http4s-0.23" % "2.8.1"
 ```
 
 The releases and dependencies for the legacy module `kamon-http4s` (without http4s version) are shown below.
@@ -71,11 +71,11 @@ object GoogleService {
 ### Step 1: Add the Kamon Libraries
 ```scala
 libraryDependencies ++= Seq(
-  "io.kamon" %% "kamon-core" % "2.6.1",
-  "io.kamon" %% "kamon-http4s-0.23" % "2.6.1",
-  "io.kamon" %% "kamon-prometheus" % "2.6.1",
-  "io.kamon" %% "kamon-zipkin" % "2.6.1",
-  "io.kamon" %% "kamon-jaeger" % "2.6.1"
+  "io.kamon" %% "kamon-core" % "2.8.1",
+  "io.kamon" %% "kamon-http4s-0.23" % "2.8.1",
+  "io.kamon" %% "kamon-prometheus" % "2.8.1",
+  "io.kamon" %% "kamon-zipkin" % "2.8.1",
+  "io.kamon" %% "kamon-jaeger" % "2.8.1"
 )
 ```
 
